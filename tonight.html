@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fff8f7">
+<title>Breeze ♡ A little something</title>
+<style>
+:root{--pink:#ef4c83;--ink:#202b49;--muted:#66708b;--line:#f3dce3}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#fffaf7,#fff3f5);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);line-height:1.6}
+header{height:60px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #f4e5e8;background:#ffffffb8}
+.logo{font-family:Georgia,serif;font-size:30px;font-style:italic;font-weight:bold;color:var(--pink)}.tag{font-size:12px;color:var(--muted)}
+main{max-width:560px;margin:0 auto;padding:22px 16px 34px;display:grid;gap:16px}
+.card{background:#fffdfb;border:1px solid var(--line);border-radius:22px;padding:22px 24px;box-shadow:0 10px 35px #a45a6c0a}
+.hero{background:linear-gradient(115deg,#ffe6ed,#fff0f3);text-align:center}.hero .em{font-size:44px}h1{font-size:26px;margin:6px 0 4px;letter-spacing:-.5px}.sub{color:#6c5670;font-size:15px;margin:0}
+p{margin:12px 0;font-size:16px}h2{font-size:18px;margin:0 0 6px}
+.invite{background:linear-gradient(145deg,#fff0f4,#fffaf9);border-color:#f8dfe7}.invite .big{font-size:20px;font-weight:800;color:#c83266}.invite ul{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:8px;color:#56617b;font-size:15px}
+.video{background:linear-gradient(140deg,#edf4ff,#f7f9ff);text-align:center}.video small{display:block;color:#56617b;margin-bottom:12px}
+.frame{position:relative;padding-top:56.25%;border-radius:14px;overflow:hidden;background:#000}.frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vframe{position:relative;width:min(100%,300px);aspect-ratio:9/16;margin:0 auto;border-radius:14px;overflow:hidden;background:#000}.vframe iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.video a{display:inline-block;margin-top:10px;color:#3d568c;font-size:13px;font-weight:700}
+.mapbtn{display:inline-block;margin-top:8px;background:linear-gradient(100deg,#f44e86,#ff7298);color:#fff;padding:9px 16px;border-radius:99px;font-weight:800;font-size:13px;text-decoration:none}.opt{background:#fff;border:1px solid #f1c5d3;border-radius:16px;padding:14px 16px;margin-top:12px}.otag{font-size:13px;font-weight:800;color:#c83266;margin-bottom:2px}.oaddr{color:#56617b;font-size:14px}.rsvp{margin-top:16px;text-align:center;font-size:15px;color:#202b49}.rsvp .otag{font-size:13px}.joke{text-align:center;padding:14px}.joke img{display:block;max-width:100%;max-height:420px;margin:0 auto;border-radius:12px}.sign{text-align:center;font-family:Georgia,serif;font-style:italic;font-size:21px;color:#4a5c87;margin-top:4px}
+footer{text-align:center;color:#9a8b9a;font-size:12px;padding-bottom:20px}
+</style>
+</head>
+<body>
+<header><div class="logo">Breeze ♡</div><div class="tag">Same match. Still hopeful. ♥</div></header>
+<main>
+  <section class="card hero"><div class="em">🪢</div><h1>Congratulations on your latest journey</h1><p class="sub">I'm really proud of you.</p></section>
+  <section class="card">
+    <p>I know our first date the other night did not go so well. However, your Lion is asking for a second date, to talk things over, admit his mistakes, celebrate your new job and to have the night you deserved. That should be in person, not on a website.</p>
+    <p>This is my silly, sincere way of showing that I care. I know things are not going well, but I still have faith in our love to get us through, and I am convinced that with the right amount of effort and a little bit of time there can be change.</p>
+  </section>
+  <section class="card joke" id="joke"><img src="joke.jpg" alt="A light-hearted joke" onerror="document.getElementById('joke').hidden=true"></section>
+  <section class="card invite">
+    <div class="big">🍽️ A second date, tonight</div>
+    <ul>
+      <li>🕣 Tonight, whenever works for you</li>
+      <li>📍 West Hampstead, easy for us both to get home from</li>
+      <li>🗺️ You choose where:</li>
+      <li>💗 No pressure. If tonight is too much, just tell me.</li>
+    </ul>
+    <div id="opts"></div>
+    <div class="rsvp"><div class="otag">💌 RSVP</div>I realised I panicked and didn't give you my number. Please RSVP to <strong>07595914112</strong><br><a class="mapbtn" href="sms:+447595914112">💬 RSVP by text</a></div>
+  </section>
+  <section class="card video">
+    <h2>A little something to make you smile 🎬</h2><small>Press play if you fancy it. Skip it if you don't.</small>
+    <div class="vframe"><iframe src="https://www.youtube-nocookie.com/embed/YxB7rzIrE-g" title="A short video" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+    <a href="https://www.youtube.com/shorts/YxB7rzIrE-g" target="_blank" rel="noopener">Not playing? Open it on YouTube ↗</a>
+  </section>
+  <div class="sign">Hoping to see you tonight.<br>Your Lion 🦁</div>
+</main>
+<script>
+/* ===== EDIT THIS ===== */
+const q=t=>"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(t);
+const PLACES=[
+ {tag:"✨ Somewhere exciting",name:"One75",addr:"West Hampstead, London",url:q("One75 West Hampstead London")},   // replace url with your exact Google Maps link
+ {tag:"😌 Somewhere low-key",name:"A cheeky Nando's",addr:"252-254 West End Lane, London NW6 1LU",url:q("Nando's West Hampstead 252-254 West End Lane London NW6 1LU")}
+];
+/* ===================== */
+document.getElementById("opts").innerHTML=PLACES.map(p=>`<div class="opt"><div class="otag">${p.tag}</div><strong>${p.name}</strong><div class="oaddr">${p.addr}</div><a class="mapbtn" href="${p.url}" target="_blank" rel="noopener">📍 Maps Link</a></div>`).join("");
+</script>
+<footer>Made with love, and a lot of humility. ♥</footer>
+</body>
+</html>
